@@ -1,0 +1,18 @@
+pip is used to download and install packages directly from PyPI. 
+PyPI is hosted by Python Software Foundation. 
+
+It is a specialized package manager that only deals with python packages. 
+apt-get is used to download and install packages from Ubuntu repositories 
+which are hosted by Canonical.
+
+Automatic update notifications, other apt-installed packages that need 
+those tools know they're installed, etc.
+
+With pip, you know you're getting the latest version at the time you install it, 
+you can install to a non-default version of Python, and you can install to a virtualenv.
+
+If you don't need any of the features pip gives you, and you don't routinely 
+have to install other Python packages which aren't available over APT, 
+use the APT versions.
+
+apt-get is pre-compiled, which installs much faster than pip. (sometimes)

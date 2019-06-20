@@ -1,0 +1,32 @@
+1.
+cd /etc/cron.d
+ls
+
+2.
+mkdir /home/pi/CronJobs
+nano /home/pi/CronJobs/RunACronTask.sh
+
+3.
+#!/bin/sh
+date >>/home/pi/CronOutput/cron.txt
+
+4.
+mkdir /home/pi/CronOutput
+
+5. Make the file executable
+chmod +x /home/pi/CronJobs/RunACronTask.sh
+
+6.
+sudo nano MyFirstCronJob
+
+7. Execute the file every 2 seconds
+*/2 * * * * pi /home/pi/CronJobs/RunACronTask.sh
+
+
+8.
+cd ~/CronOutput
+
+ls
+
+
+Ref: http://raspberrypituts.com/raspberry-pi-simple-cron-jobs-explanation/

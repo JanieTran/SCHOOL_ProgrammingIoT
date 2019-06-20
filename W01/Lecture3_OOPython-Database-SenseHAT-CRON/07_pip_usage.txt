@@ -1,0 +1,13 @@
+pip freeze
+
+pip install simplejson
+
+pip install --upgrade simplejson
+
+pip uninstall simplejson
+
+pip show pylint
+
+pip search "pylint"
+
+python -m pip install --upgrade pip
