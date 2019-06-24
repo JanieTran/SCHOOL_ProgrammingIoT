@@ -1,0 +1,27 @@
+1.
+mkdir /home/pi/CronJobs
+nano /home/pi/CronJobs/RunACronTask.sh
+
+2.
+#!/bin/sh
+date >>/home/pi/CronOutput/cron.txt
+
+3.
+chmod +x /home/pi/CronJobs/RunACronTask.sh
+
+4.
+mkdir /home/pi/CronOutput
+
+5.
+sudo nano /etc/cron.d/MyFirstCronJob
+
+6.
+* * * * * pi /home/pi/CronJobs/RunACronTask.sh
+
+7.
+cd /home/pi/CronOutput
+ls
+cat cron.txt
+
+# Reference: http://raspberrypituts.com/raspberry-pi-simple-cron-jobs-explanation/
+# For crontab syntax see: https://crontab.guru/

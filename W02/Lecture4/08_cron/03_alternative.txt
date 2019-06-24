@@ -1,0 +1,23 @@
+1.
+Add script to /etc/rc.local
+
+2.
+sudo nano /etc/rc.local
+
+3.
+Add script before exit 0
+The script will only run once.
+Note # is a comment.
+This was used to run the show_ip.py script.
+The & makes the script run in the background.
+
+su pi -c "/home/pi/show_ip.py &"
+
+exit 0
+
+Example of adding another script:
+
+su pi -c "/home/pi/show_ip.py &"
+su pi -c "/home/pi/CronJobs/RunACronTask.sh &"
+
+exit 0

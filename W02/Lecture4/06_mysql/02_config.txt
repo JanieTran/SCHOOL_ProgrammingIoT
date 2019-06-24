@@ -1,0 +1,16 @@
+sudo mysql_secure_installation
+
+sudo mysql -u root -p
+CREATE DATABASE temps;
+USE temps;
+CREATE USER 'pi'@'localhost' IDENTIFIED BY 'abc123';
+GRANT ALL PRIVILEGES ON temps.* TO 'pi'@'localhost';
+FLUSH PRIVILEGES;
+quit
+
+mysql -u pi -p
+USE temps;
+CREATE TABLE tempdat (tdate DATE, ttime TIME, zone TEXT, temperature NUMERIC);
+quit
+
+pip3 install mysqlclient

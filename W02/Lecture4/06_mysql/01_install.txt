@@ -1,0 +1,29 @@
+Install MySQL on Raspbian
+
+sudo apt-get install mysql-server python-mysqldb
+
+Remove
+
+With the command:
+sudo apt-get remove --purge mysql\*
+
+You can delete anything related to packages named mysql.
+
+You can list all installed mysql packages with the command:
+sudo dpkg -l | grep -i mysql
+
+For more cleanup of the package cache, you can use the command:
+sudo apt-get clean
+
+Also, remember to use the command:
+sudo updatedb
+
+------------
+
+How to use MariaDB?
+
+https://www.linode.com/docs/databases/mariadb/mariadb-setup-debian/
+
+How to use Python to fetch data from database?
+
+http://raspberrywebserver.com/sql-databases/using-mysql-on-a-raspberry-pi.html
