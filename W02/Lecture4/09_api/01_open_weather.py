@@ -7,7 +7,7 @@ APPID = "01f8a6161032a97ce8113b1fe410a749"  # Real API Key.
 
 response = requests.get(
     "http://api.openweathermap.org/data/2.5/weather?q={city},{countryCode}&appid={appid}".format(
-        city="Melbourne", countryCode="au", appid=APPID))
+        city="Ho Chi Minh City", countryCode="vn", appid=APPID))
 
 data = json.loads(response.text)
 print(json.dumps(data, indent=4))
