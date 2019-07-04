@@ -1,0 +1,9 @@
+assiuming flask is already installed, otherwise
+
+pip3 install flask
+pip3 install --user flask sqlalchemy flask-sqlalchemy
+
+Acknowledgement (code adopted for educational & learning purposes only): 
+ https://www.codementor.io/garethdwyer/building-a-crud-application-with-flask-and-sqlalchemy-dm3wv7yu2
+
+
