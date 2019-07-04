@@ -11,9 +11,9 @@ app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Update HOST and PASSWORD appropriately.
-HOST = "35.201.18.142"
+HOST = "35.240.168.15"
 USER = "root"
-PASSWORD = "abc123"
+PASSWORD = "rmit"
 DATABASE = "People"
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://{}:{}@{}/{}".format(USER, PASSWORD, HOST, DATABASE)
@@ -25,4 +25,4 @@ app.register_blueprint(api)
 app.register_blueprint(site)
 
 if __name__ == "__main__":
-    app.run(host = "0.0.0.0")
+    app.run(host="0.0.0.0")

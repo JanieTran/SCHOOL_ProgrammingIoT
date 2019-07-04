@@ -1,9 +1,9 @@
-from flask import Flask, Blueprint, request, jsonify, render_template
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
-import os, requests, json
+import json
+import requests
+from flask import Blueprint, render_template
 
 site = Blueprint("site", __name__)
+
 
 # Client webpage.
 @site.route("/")
@@ -12,4 +12,4 @@ def index():
     response = requests.get("http://127.0.0.1:5000/person")
     data = json.loads(response.text)
 
-    return render_template("index.html", people = data)
+    return render_template("index.html", people=data)
